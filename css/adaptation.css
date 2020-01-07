@@ -26,6 +26,9 @@
 .interest_skill_end{
   margin-left: 650px;
 }
+.link_footer{
+  margin-right: 50px;
+}
 /* 992-1200px */
 @media screen and (max-width: 1200px) {
   .line_skill{
@@ -77,6 +80,9 @@
   }
   .interest_skill{
     margin-left: 450px;
+  }
+  .link_footer{
+    margin-right: 0;
   }
 }
 /* 576-768px */
@@ -134,5 +140,14 @@
   }
   .interest_skill_end{
     margin-left: 190px;
+  }
+  .slick-next .slick-arrow{
+    display: none;
+  }
+.slick-prev:before, .slick-next:before {
+  display: none;
+  }
+.slick-next {
+    right: 0;
   }
 }

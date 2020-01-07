@@ -38,7 +38,27 @@ setInterval(() => preloader(), 500)
 // Кінець //
 
 
-// Progress //
+// Slick slider //
 
+$('.single-item').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  dots:true,
+  responsive: [
+   {
+     breakpoint: 480,
+     settings: {
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       dots: true,
+       centerMode: true,
+       variableWidth: true
+     }
+   }
+ ]
+
+});
 
 // END //
