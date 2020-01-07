@@ -62,3 +62,48 @@ $('.single-item').slick({
 });
 
 // END //
+
+// Animation //
+
+$(function(){
+	$("a").click(function() {
+		elementClick = $(this).attr("href");
+		destination = $(elementClick).offset().top;
+		$("body,html").animate({scrollTop: destination }, 800);
+	});
+  $(window).scroll(function() {
+    	$('.left').each(function(){
+        	var imagePos = $(this).offset().top;
+
+        	var topOfWindow = $(window).scrollTop();
+        	if (imagePos < topOfWindow+650) {
+            	$(this).addClass("fadeInLeft");
+       	 }
+    	});
+			$('.right').each(function(){
+        	var imagePos = $(this).offset().top;
+
+        	var topOfWindow = $(window).scrollTop();
+        	if (imagePos < topOfWindow+650) {
+            	$(this).addClass("fadeInRight");
+       	 }
+    	});
+			$('.top').each(function(){
+        	var imagePos = $(this).offset().top;
+
+        	var topOfWindow = $(window).scrollTop();
+        	if (imagePos < topOfWindow+650) {
+            	$(this).addClass("fadeInDown");
+       	 }
+    	});
+			$('.stat').each(function(){
+        	var imagePos = $(this).offset().top;
+
+        	var topOfWindow = $(window).scrollTop();
+        	if (imagePos < topOfWindow+650) {
+            	$(this).addClass("fadeIn");
+       	 }
+    	});
+		});
+});
+  //

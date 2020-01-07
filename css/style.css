@@ -153,6 +153,11 @@ body{
   margin-top: 10px;
   color: #ffffff;
   font-size: 40px;
+  transition: all 1s;
+}
+.footer a:active{
+  color: #28c7da;
+  transition: all 1s;
 }
 
 /* Початок настройки кольору в секції info */
